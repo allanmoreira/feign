@@ -1,0 +1,4 @@
+services:
+  configurations:
+    jsonplaceholder:
+      url: https://jsonplaceholder.typicode.com
