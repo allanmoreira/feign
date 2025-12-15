@@ -1,4 +1,5 @@
 services:
   configurations:
     jsonplaceholder:
+      enabled: true
       url: https://jsonplaceholder.typicode.com

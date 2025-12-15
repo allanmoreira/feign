@@ -1,0 +1,8 @@
+services:
+  environment:
+    configurations:
+      environments  :
+        dev:
+          url: http://localhost:8080/api/dev
+        prd:
+          url: http://localhost:8080/api/prd

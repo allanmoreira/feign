@@ -18,7 +18,7 @@ function buscaIdDefault(){
 function buscarUsuario() {
     $('#loader-overlay').show();
     $.ajax({
-        url: `http://localhost:8080/jsonplaceholder/users`,
+        url: `http://localhost:8080/api/jsonplaceholder/users`,
         method: 'GET',
         success: function(response) {
 

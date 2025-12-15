@@ -3,6 +3,7 @@ spring:
     group:
       local:
         - services
+        - services-env
 feign:
   client:
     config:

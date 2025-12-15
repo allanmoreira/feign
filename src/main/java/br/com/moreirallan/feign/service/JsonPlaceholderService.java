@@ -1,6 +1,6 @@
 package br.com.moreirallan.feign.service;
 
-import br.com.moreirallan.feign.client.api.JsonPlaceholderClient;
+import br.com.moreirallan.feign.client.jsonplaceholder.api.JsonPlaceholderClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

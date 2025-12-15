@@ -1,4 +1,4 @@
-package br.com.moreirallan.feign.client.api;
+package br.com.moreirallan.feign.client.jsonplaceholder.api;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

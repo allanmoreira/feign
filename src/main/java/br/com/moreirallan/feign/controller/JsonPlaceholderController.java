@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(path = "jsonplaceholder")
+@RequestMapping(path = "api/jsonplaceholder")
 public class JsonPlaceholderController {
 
     @Autowired

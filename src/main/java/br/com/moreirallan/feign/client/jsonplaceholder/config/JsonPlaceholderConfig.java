@@ -1,6 +1,6 @@
-package br.com.moreirallan.feign.client.config;
+package br.com.moreirallan.feign.client.jsonplaceholder.config;
 
-import br.com.moreirallan.feign.client.api.JsonPlaceholderAPI;
+import br.com.moreirallan.feign.client.jsonplaceholder.api.JsonPlaceholderAPI;
 import br.com.moreirallan.feign.component.ServiceConfigurationResolver;
 import br.com.moreirallan.feign.feign.FeignClientFactory;
 import br.com.moreirallan.feign.properties.service.ServiceItem;
@@ -16,7 +16,7 @@ public class JsonPlaceholderConfig {
     ServiceConfigurationResolver serviceConfigurationResolver;
 
     @Bean("jsonPlaceholderAPI")
-    @ConditionalOnProperty(name = "services.configurations.jsonplaceholder")
+    @ConditionalOnProperty(name = "services.configurations.jsonplaceholder.enabled", havingValue = "true", matchIfMissing = true)
     public JsonPlaceholderAPI jsonPlaceholderAPI() {
         ServiceItem service = serviceConfigurationResolver.getConfiguration("jsonplaceholder");
         return new FeignClientFactory(service)

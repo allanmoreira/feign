@@ -1,4 +1,4 @@
-package br.com.moreirallan.feign.client.api;
+package br.com.moreirallan.feign.client.jsonplaceholder.api;
 
 import feign.RequestLine;
 

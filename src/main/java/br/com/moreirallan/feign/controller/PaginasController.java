@@ -17,5 +17,8 @@ public class PaginasController {
         return "usuario";
     }
 
-
+    @GetMapping("/environment")
+    public String environment(Model model) {
+        return "environment";
+    }
 }
